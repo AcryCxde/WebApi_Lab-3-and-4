@@ -1,16 +1,49 @@
-# This is a sample Python script.
+from parser import get_data
+from db import Database
+from sqlalchemy.orm import sessionmaker
+from models import Item
+from sqlalchemy.orm import Session
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Глобальная переменная для хранения сессии
+session: Session = None
 
+def init_database():
+    """Инициализирует базу данных и возвращает сессию."""
+    global session
+    db = Database()
+    db.create()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    Session = sessionmaker(bind=db.engine)
+    session = Session()
+    return session
 
+def item_exists(name, price):
+    """Проверяет, существует ли элемент с таким же именем и ценой в базе данных."""
+    return session.query(Item).filter_by(name=name, price=price).first() is not None
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def parse_and_store():
+    """Парсит данные и сохраняет их в базу данных, избегая дубликатов."""
+    try:
+        items = get_data()
+        if items:
+            new_items = []
+            for item in items:
+                if not item_exists(item.name, item.price):
+                    new_items.append(item)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+            if new_items:
+                session.add_all(new_items)
+                session.commit()
+                return f"Успешно добавлено {len(new_items)} новых элементов."
+            else:
+                return "Все элементы уже существуют в базе данных."
+        else:
+            return "Нет данных для добавления."
+    except Exception as e:
+        session.rollback()
+        return f"Произошла ошибка: {e}"
+
+def close_database():
+    """Закрывает сессию базы данных."""
+    if session:
+        session.close()

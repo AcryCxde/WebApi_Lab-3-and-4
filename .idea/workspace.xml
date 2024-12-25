@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f29f8801-5a34-424a-a234-ad92532cfa02" name="Changes" comment="fix lab3 2.0">
-      <change afterPath="$PROJECT_DIR$/templates/websocket_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WebApi_Lab-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WebApi_Lab-3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="f29f8801-5a34-424a-a234-ad92532cfa02" name="Changes" comment="do lab-4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -57,7 +57,7 @@
     "Python.models.executor": "Run",
     "Python.tipamain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Lab-4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +66,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.db_manager">
     <configuration name="db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WebApi_Lab-3" />
       <option name="ENV_FILES" value="" />
@@ -81,7 +87,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/db.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="db_manager" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="WebApi_Lab-3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,7 +133,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db/db_manager.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,7 +171,7 @@
       <workItem from="1734541819315" duration="5275000" />
       <workItem from="1734598682180" duration="8214000" />
       <workItem from="1734718497517" duration="728000" />
-      <workItem from="1735148289873" duration="1742000" />
+      <workItem from="1735148289873" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="fix lab3">
       <option name="closed" value="true" />
@@ -183,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734609770533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="do lab-4">
+      <option name="closed" value="true" />
+      <created>1735151128198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735151128198</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +206,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix lab3" />
     <MESSAGE value="fix lab3 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix lab3 2.0" />
+    <MESSAGE value="do lab-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="do lab-4" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WebApi_Lab_3$models.coverage" NAME="models Coverage Results" MODIFIED="1734543160867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

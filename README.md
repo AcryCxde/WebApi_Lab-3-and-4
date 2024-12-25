@@ -20,7 +20,7 @@
 1. **Создайте виртуальное окружение:**
    ```bash
    python -m venv venv
-   venv\Scripts\activate     # Для Windows
+   venv\Scripts\activate
    ```
 
 2. **Установите зависимости:**

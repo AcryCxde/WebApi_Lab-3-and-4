@@ -4,7 +4,6 @@ from sqlalchemy.orm import sessionmaker
 from models import Item
 from sqlalchemy.orm import Session
 
-# Глобальная переменная для хранения сессии
 session: Session = None
 
 def init_database():

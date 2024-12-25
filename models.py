@@ -1,6 +1,6 @@
 from sqlalchemy import Integer, String, Column
 from datetime import datetime
-from db import Database
+from db.db import Database
 
 def now_with_seconds():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")

@@ -1,5 +1,5 @@
 from parser import get_data
-from db import Database
+from db.db import Database
 from sqlalchemy.orm import sessionmaker
 from models import Item
 from sqlalchemy.orm import Session
